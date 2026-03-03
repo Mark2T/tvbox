@@ -8,8 +8,9 @@ on:
   workflow_dispatch: # 允许你在网页上手动点击运行
 
 jobs:
-  sync:
+  build: # 或者你命名的其他任务名
     runs-on: ubuntu-latest
+    # 必须加上下面这两行授权：
     permissions:
       contents: write
     steps:
